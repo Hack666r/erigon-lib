@@ -956,7 +956,7 @@ func (hph *HexPatriciaHashed) needFolding(hashedKey []byte) bool {
 }
 
 // The purpose of fold is to reduce hph.currentKey[:hph.currentKeyLen]. It should be invoked
-// until that current key becomes a prefix of hashedKey that we will proccess next
+// until that current key becomes a prefix of hashedKey that we will process next
 // (in other words until the needFolding function returns 0)
 func (hph *HexPatriciaHashed) fold() (branchData BranchData, updateKey []byte, err error) {
 	updateKeyLen := hph.currentKeyLen
