@@ -396,7 +396,7 @@ func (d *Decompressor) EnableWillNeed() *Decompressor {
 	return d
 }
 
-// Getter represent "reader" or "interator" that can move accross the data of the decompressor
+// Getter represent "reader" or "interator" that can move across the data of the decompressor
 // The full state of the getter can be captured by saving dataP, and dataBit
 type Getter struct {
 	patternDict *patternTable
